@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Pesquisa: Tags Semânticas do HTML5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pesquisa acadêmica sobre as tags semânticas do HTML5 e sua importância no desenvolvimento web moderno">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Trabalho de Programação Web</h1>
+  <p><strong>Aluno(a):</strong> Stephanie Marinho</p>
+  <p><strong>Turma:</strong> DS13 • <strong>Professora:</strong> Mariany Lima</p>
+  <p><strong>Tema:</strong> Tags Semânticas do HTML - Importância e Aplicações</p>
+  <p><strong>Data:</strong> 04/06/2025</p>
+</header>
+
+<nav>
+  <a href="#introducao">Introdução</a>
+  <a href="#tags">Tags Semânticas</a>
+  <a href="#beneficios">Benefícios</a>
+  <a href="#exemplo">Exemplo</a>
+  <a href="#boas-praticas">Boas Práticas</a>
+  <a href="#conclusao">Conclusão</a>
+  <a href="#referencias">Referências</a>
+</nav>
+
+<div class="container">
+  <main>
+    <section id="introducao">
+      <h2>Introdução</h2>
+      <p>O HTML5 revolucionou o desenvolvimento web ao introduzir um conjunto de <strong>elementos semânticos</strong> que descrevem claramente o significado do conteúdo. Diferentemente das versões anteriores que dependiam excessivamente de elementos genéricos como <code>&lt;div&gt;</code> e <code>&lt;span&gt;</code>, o HTML5 oferece tags específicas que melhoram a estruturação, acessibilidade e indexação do conteúdo.</p>
+      
+      <p>A semântica no HTML refere-se ao significado ou função do conteúdo, não apenas à sua apresentação visual. Enquanto o CSS cuida do estilo, o HTML semântico foca na organização e significado do conteúdo.</p>
+      
+      <blockquote>
+        "A web semântica não é apenas sobre colocar dados na web. É sobre fazer links entre eles para que possam se tornar mais úteis." - Tim Berners-Lee, inventor da World Wide Web.
+      </blockquote>
+    </section>
+
+    <section id="tags">
+      <h2>Principais Tags Semânticas do HTML5</h2>
+      <p>O HTML5 introduziu diversas tags semânticas que ajudam a estruturar o conteúdo de forma significativa. Abaixo estão as principais:</p>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Descrição</th>
+            <th>Uso Recomendado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>&lt;header&gt;</code></td>
+            <td>Representa o cabeçalho da página ou de uma seção</td>
+            <td>Pode conter logotipo, título, navegação principal</td>
+          </tr>
+          <tr>
+            <td><code>&lt;nav&gt;</code></td>
+            <td>Define uma seção de navegação</td>
+            <td>Menus principais, links de navegação</td>
+          </tr>
+          <tr>
+            <td><code>&lt;main&gt;</code></td>
+            <td>Conteúdo principal único da página</td>
+            <td>Deve aparecer apenas uma vez por página</td>
+          </tr>
+          <tr>
+            <td><code>&lt;article&gt;</code></td>
+            <td>Conteúdo independente e auto-contido</td>
+            <td>Posts de blog, notícias, artigos</td>
+          </tr>
+          <tr>
+            <td><code>&lt;section&gt;</code></td>
+            <td>Agrupa conteúdo temático</td>
+            <td>Capítulos, agrupamento de conteúdo relacionado</td>
+          </tr>
+          <tr>
+            <td><code>&lt;aside&gt;</code></td>
+            <td>Conteúdo relacionado indiretamente</td>
+            <td>Barras laterais, anúncios, informações complementares</td>
+          </tr>
+          <tr>
+            <td><code>&lt;footer&gt;</code></td>
+            <td>Rodapé da página ou seção</td>
+            <td>Informações de contato, links secundários, copyright</td>
+          </tr>
+          <tr>
+            <td><code>&lt;figure&gt;</code> e <code>&lt;figcaption&gt;</code></td>
+            <td>Agrupa mídia com sua legenda</td>
+            <td>Imagens, vídeos, gráficos com descrição</td>
+          </tr>
+          <tr>
+            <td><code>&lt;time&gt;</code></td>
+            <td>Representa data/hora</td>
+            <td>Datas de publicação, eventos</td>
+          </tr>
+          <tr>
+            <td><code>&lt;mark&gt;</code></td>
+            <td>Texto destacado</td>
+            <td>Trechos relevantes, termos de busca</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <h3>Diferença entre Article e Section</h3>
+      <p>Uma dúvida comum é quando usar <code>&lt;article&gt;</code> e quando usar <code>&lt;section&gt;</code>:</p>
+      <ul>
+        <li><strong>Article:</strong> Deve fazer sentido por si só, independente do resto do site. Exemplo: um post de blog, uma notícia, um comentário.</li>
+        <li><strong>Section:</strong> Agrupa conteúdo temático relacionado. Exemplo: capítulos de um livro, agrupamento de notícias por categoria.</li>
+      </ul>
+      
+    </section>
+
+    <section id="beneficios">
+      <h2>Benefícios do Uso de Tags Semânticas</h2>
+      <p>O uso correto das tags semânticas traz diversos benefícios para desenvolvedores, usuários e mecanismos de busca:</p>
+      
+      <h3>1. Acessibilidade</h3>
+      <p>Leitores de tela e outras tecnologias assistivas podem navegar melhor pelo conteúdo quando ele está estruturado semanticamente. Por exemplo:</p>
+      <ul>
+        <li>Usuários podem pular diretamente para o conteúdo principal (<code>&lt;main&gt;</code>)</li>
+        <li>Navegação entre seções fica mais intuitiva</li>
+        <li>O significado do conteúdo é transmitido de forma mais clara</li>
+      </ul>
+      
+      <h3>2. SEO (Otimização para Mecanismos de Busca)</h3>
+      <p>Os mecanismos de busca dão mais peso ao conteúdo dentro de tags semânticas:</p>
+      <ul>
+        <li>O Google pode identificar melhor o conteúdo principal</li>
+        <li>Melhor indexação do conteúdo estruturado</li>
+        <li>Maior relevância nos resultados de busca</li>
+      </ul>
+      
+      <h3>3. Manutenção do Código</h3>
+      <p>Para desenvolvedores, o código se torna:</p>
+      <ul>
+        <li>Mais legível e autoexplicativo</li>
+        <li>Mais fácil de manter e atualizar</li>
+        <li>Menos propenso a erros de estrutura</li>
+      </ul>
+      
+      <h3>4. Compatibilidade e Futuro</h3>
+      <p>O HTML semântico:</p>
+      <ul>
+        <li>É o padrão atual recomendado pelo W3C</li>
+        <li>Prepara o site para tecnologias futuras</li>
+        <li>Facilita a integração com outras tecnologias (como microdados)</li>
+      </ul>
+    </section>
+
+    <section id="exemplo">
+      <h2>Exemplo Prático Completo</h2>
+      <p>Abaixo está um exemplo completo de página HTML utilizando tags semânticas:</p>
+      <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Nanatsu no Taizai - Enciclopédia dos Pecados&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;h1&gt;Nanatsu no Taizai&lt;/h1&gt;
+      &lt;p&gt;Conheça os Sete Pecados Capitais e os mistérios da Britannia&lt;/p&gt;
+      &lt;nav&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Início&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Personagens&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Reinos&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Contato&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+      &lt;article&gt;
+        &lt;header&gt;
+          &lt;h2&gt;Meliodas: O Pecado da Ira do Dragão&lt;/h2&gt;
+          &lt;p&gt;Publicado em &lt;time datetime="2025-06-01"&gt;1 de Junho de 2025&lt;/time&gt; por Ste&lt;/p&gt;
+        &lt;/header&gt;
+
+        &lt;section&gt;
+          &lt;h3&gt;História&lt;/h3&gt;
+          &lt;p&gt;Meliodas é o capitão dos Sete Pecados Capitais e antigo líder dos Dez Mandamentos...&lt;/p&gt;
+        &lt;/section&gt;
+
+        &lt;section&gt;
+          &lt;h3&gt;Poderes e Habilidades&lt;/h3&gt;
+          &lt;p&gt;Entre suas habilidades estão Full Counter, Trillion Dark e Assault Mode...&lt;/p&gt;
+          &lt;figure&gt;
+            &lt;img src="meliodas.jpg" alt="Imagem de Meliodas com sua espada"&gt;
+            &lt;figcaption&gt;Meliodas em sua forma demoníaca&lt;/figcaption&gt;
+          &lt;/figure&gt;
+        &lt;/section&gt;
+
+        &lt;footer&gt;
+          &lt;p&gt;Tags: &lt;a href="#"&gt;Meliodas&lt;/a&gt;, &lt;a href="#"&gt;Sete Pecados&lt;/a&gt;, &lt;a href="#"&gt;Anime&lt;/a&gt;&lt;/p&gt;
+        &lt;/footer&gt;
+      &lt;/article&gt;
+
+      &lt;section&gt;
+        &lt;h2&gt;Comentários dos Fãs&lt;/h2&gt;
+        &lt;article&gt;
+          &lt;h3&gt;Diane disse:&lt;/h3&gt;
+          &lt;p&gt;Meliodas é incrível! Meu capitão preferido! &amp;#128151;&lt;/p&gt;
+          &lt;footer&gt;&lt;time datetime="2025-06-02"&gt;2 de Junho&lt;/time&gt;&lt;/footer&gt;
+        &lt;/article&gt;
+      &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;aside&gt;
+      &lt;section&gt;
+        &lt;h2&gt;Sobre o Autor&lt;/h2&gt;
+        &lt;p&gt;Ste é estudante de sistemas e nerdola.&lt;/p&gt;
+      &lt;/section&gt;
+
+      &lt;section&gt;
+        &lt;h2&gt;Mais Personagens&lt;/h2&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Ban - Pecado da Ganância&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;King - Pecado da Preguiça&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Escanor - Pecado do Orgulho&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/section&gt;
+    &lt;/aside&gt;
+
+    &lt;footer&gt;
+      &lt;p&gt;&amp;copy; 2025 Enciclopédia dos Pecados. Todos os direitos reservados.&lt;/p&gt;
+      &lt;address&gt;Contato: &lt;a href="mailto:ste@gmail.com"&gt;ste@gmail.com&lt;/a&gt;&lt;/address&gt;
+    &lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+    </section>
+
+    <section id="boas-praticas">
+      <h2>Boas Práticas no Uso de Tags Semânticas</h2>
+      <p>Para aproveitar ao máximo as tags semânticas, siga estas recomendações:</p>
+      
+      <h3>1. Hierarquia Adequada</h3>
+      <ul>
+        <li>Use apenas um <code>&lt;main&gt;</code> por página</li>
+        <li>Mantenha uma estrutura lógica de cabeçalhos (<code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>)</li>
+        <li>Não use tags semânticas apenas para estilização</li>
+      </ul>
+      
+      <h3>2. Quando Usar Divs</h3>
+      <p>As <code>&lt;div&gt;</code> ainda têm seu lugar quando:</p>
+      <ul>
+        <li>Não existe uma tag semântica adequada</li>
+        <li>Precisa de um container apenas para fins de estilização</li>
+        <li>Agrupa elementos sem relação semântica entre si</li>
+      </ul>
+      
+      <h3>3. Validação</h3>
+      <p>Sempre valide seu HTML usando ferramentas como:</p>
+      <ul>
+        <li><a href="https://validator.w3.org/" target="_blank">W3C Validator</a></li>
+        <li>Extensões de navegador como HTML Validator</li>
+        <li>Linters no seu editor de código (ESLint, HTMLHint)</li>
+      </ul>
+      
+      <h3>4. Microdados e ARIA</h3>
+      <p>Complemente a semântica com:</p>
+      <ul>
+        <li><strong>ARIA (Accessible Rich Internet Applications):</strong> Atributos para melhorar acessibilidade</li>
+        <li><strong>Microdados/Schema.org:</strong> Para estruturar informações para mecanismos de busca</li>
+      </ul>
+    </section>
+
+    <section id="conclusao">
+      <h2>Conclusão</h2>
+      <p>O uso adequado das tags semânticas do HTML5 representa um avanço significativo no desenvolvimento web, trazendo benefícios tangíveis em três áreas principais:</p>
+      
+      <ol>
+        <li><strong>Acessibilidade:</strong> Tornando a web mais inclusiva para todos os usuários, independente de suas capacidades ou dispositivos.</li>
+        <li><strong>Organização:</strong> Criando estruturas de código mais limpas, lógicas e fáceis de manter.</li>
+        <li><strong>SEO e Visibilidade:</strong> Melhorando a indexação e posicionamento nos mecanismos de busca.</li>
+      </ol>
+      
+      <p>À medida que a web evolui, a semântica se torna cada vez mais importante. Novas tags e especificações continuam sendo desenvolvidas, e entender esses conceitos fundamentais prepara os desenvolvedores para as tecnologias do futuro.</p>
+      
+      <p>Como desenvolvedores, temos a responsabilidade de criar experiências web que sejam não apenas visualmente atraentes, mas também bem estruturadas e acessíveis. O HTML semântico é o primeiro passo nessa direção.</p>
+    </section>
+
+    <section id="referencias">
+      <h2>Referências Bibliográficas</h2>
+      <ul>
+        <li>MDN Web Docs. (2025). <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element" target="_blank">Elementos HTML</a>.</li>
+        <li>W3C. (2024). <a href="https://www.w3.org/TR/html52/" target="_blank">HTML 5.2 Specification</a>.</li>
+        <li>Silva, M. (2024). <em>HTML5 - A Linguagem de Marcação que Revolucionou a Web</em>. Editora Tecnológica.</li>
+        <li>WebAIM. (2025). <a href="https://webaim.org/" target="_blank">Web Accessibility In Mind</a>.</li>
+        <li>Google Developers. (2024). <a href="https://developers.google.com/search/docs/guides/intro-structured-data" target="_blank">Structured Data</a>.</li>
+        <li>Powers, S. (2023). <em>Semantic HTML: Principles and Practices</em>. O'Reilly Media.</li>
+      </ul>
+    </section>
+  </main>
+
+  <aside>
+    <section>
+      <h3>Resumo do Trabalho</h3>
+      <p>Este trabalho aborda profundamente as tags semânticas do HTML5, incluindo:</p>
+      <ul>
+        <li>Definição e importância da semântica</li>
+        <li>Todas as principais tags semânticas</li>
+        <li>Diferenças entre elementos semânticos e não-semânticos</li>
+        <li>Exemplos práticos de aplicação</li>
+        <li>Boas práticas e recomendações</li>
+        <li>Impacto na acessibilidade e SEO</li>
+      </ul>
+    </section>
+    
+    <section>
+      <h3>Recursos Adicionais</h3>
+      <ul>
+        <li><a href="https://html.spec.whatwg.org/" target="_blank">HTML Living Standard</a></li>
+        <li><a href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank">WAI-ARIA</a></li>
+        <li><a href="https://schema.org/" target="_blank">Schema.org</a></li>
+        <li><a href="https://wave.webaim.org/" target="_blank">WAVE Accessibility Tool</a></li>
+      </ul>
+    </section>
+    
+    <section>
+      <h3>Sobre a Autora</h3>
+      <p>Stephanie Marinho é estudante de Desenvolvimento de Sistemas com foco em front-end e acessibilidade web.</p>
+      <p>Este trabalho foi desenvolvido para a disciplina de Programação Web sob orientação da professora Mariany Lima.</p>
+    </section>
+  </aside>
+</div>
+
+<footer>
+  <p>Trabalho acadêmico – Desenvolvimento Web – &copy; Stephanie Marinho 2025</p>
+  <p>Senai "Roberto Mange" - Campinas</p>
+</footer>
+
+</body>
+</html>
