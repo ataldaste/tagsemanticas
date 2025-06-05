@@ -35,7 +35,7 @@ tags-semanticas-html/
 ## 💻 Como Visualizar o Projeto
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/tags-semanticas-html.git
+git clone https://github.com/ataldaste/tagsemanticas.git
 ```
 
 2. Abra o arquivo `index.html` em qualquer navegador moderno.
@@ -45,10 +45,7 @@ git clone https://github.com/seu-usuario/tags-semanticas-html.git
 - Cores harmoniosas com bom contraste
 - Tipografia legível
 - Efeitos de hover suaves
-- Design responsivo:
-  - Adaptação para telas grandes (desktop)
-  - Layout otimizado para tablets
-  - Versão mobile-first para celulares
+- Design responsivo
 
 ## 🌐 Funcionalidades
 - Menu de navegação responsivo
